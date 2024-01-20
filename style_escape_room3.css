@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Poppins:wght@100;200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url("sl3.jpg");
+    background-position:center;
+    background-size: cover;
+    
+  
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 22px 100px;
+    background:#884A39;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(4px);
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.logo:hover{
+    color:#162938;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+h1{
+   margin-top: 35%;
+   padding: 20%;
+   background-color: #162938;
+   color: white;
+   border-radius: 10px;
+   
+}
+
+
+.bunker{
+    margin-top: 9%;
+    margin-left: 30px;
+    color: #fff;
+    
+    text-align: left;
+    border-spacing: 50px;
+}
+
+.title{  
+    padding: 20px;
+    margin-right: 800px;
+    margin-top: 120px;
+    margin-left: 10px;
+    text-align: center;
+    border: 3px solid rgba(0, 0, 0, 0.712);
+    border-radius: 20px;
+    background-color: #b2b2b2;
+    color: black;
+    color:rgb(255, 255, 255)
+   
+}
+.info-box{
+    margin-left: 10px;
+    position: sticky;
+    width: 550px;
+    height: 250px;
+    background-color: #b2b2b2;
+    border: 3px solid rgba(0, 0, 0, 0.712);
+    border-radius: 20px;
+    border-bottom-left-radius: 0%; 
+    
+    
+   
+}
+
+.info-box .info-text{
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 5px;
+    user-select: none;
+    color: rgb(22, 73, 139);
+   
+}
+
+
+footer{
+    
+    
+    background-color:#884A39;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+    position:fixed;
+    left:0px;
+    bottom: 0px;
+    
+}
+
+.gamebutton{
+    margin-left: 15px;
+    margin-top: 40px;
+    
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+.bookingTitle{
+    color: white
+    }
+    @media screen and (max-width: 400px) and (max-height: 935px) {
+        body {
+            overflow: hidden;
+        }
+    
+        /* Ostatak vaših stilova za manje ekrane i manje visine */
+        header {
+            padding: 5% 10%;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+        }
+    
+        .logo {
+            font-size: 1.5em;
+        }
+    
+        .navigation a {
+            font-size: 1em;
+            margin-left: 5%;
+        }
+    
+        .navigation .btnLogin-popup {
+            width: 30%;
+            margin-left: 5%;
+        }
+    
+        .narudzba {
+            width: 100%;
+            left: 0;
+            margin-left: 0;
+            transform: none;
+        }
+    
+        .form-container {
+            max-width: 100%;
+            margin: 5% 2%;
+        }
+    
+        .title {
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+    
+        .info-box{
+            margin-left: 10px;
+            position: sticky;
+            width: 85%;
+            height: 300px;
+            background-color: #b2b2b2;
+            border: 3px solid rgba(0, 0, 0, 0.712);
+            border-radius: 20px;
+            border-bottom-left-radius: 0%;
+            box-shadow: 8px 8px rgba(0, 0, 0, 0.5); 
+        }
+        .info-box .info-text{
+            font-weight: 500;
+            font-size: 13px;
+            margin-top: 5px;
+            user-select: none;
+            color:black
+           
+        }
+    
+        .datetimepicker {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    

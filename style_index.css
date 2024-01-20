@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Poppins:wght@100;200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(kontakt_back.jpg);
+    background-size: cover;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #884A39;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(4px);
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    transition: 0.5s;
+}
+
+footer{
+    
+    
+    background-color:#884A39;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+    position:fixed;
+    left:0px;
+    bottom: 0px;
+    
+}
+
+.logo:hover{
+    color:#162938;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    user-select: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:#fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+
+.donji{
+    display: flex;
+    backdrop-filter: blur(6px);
+    height: 462px;
+    position: relative;
+}
+
+.donji .odlomak{
+    background-color: #0000005d;
+}
+
+.donji h1{
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    text-shadow: 2px 2px #000000;
+    
+}
+
+.donji h2{
+    margin-top: 20px;
+    color: #e2e2e2;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    text-shadow: 2px 2px #000000;
+}
+
+.welcome{
+    border-bottom: 3px solid #222;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 384px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 2px 2px #000000;
+}
+
+
+.wrapper{
+    position: relative;
+    margin: auto;
+    justify-self: center;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease, height .2s ease;
+    overflow: hidden;
+    transform: scale(0);
+}
+
+.wrapper.active-popup{
+    transform: scale(1);
+}
+
+.wrapper.active{
+    height: 520px;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+.sidebar{
+    margin-top: 4.8%;
+    position: absolute;
+    left: 0px;
+    width: 60px;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.sidebar:hover{
+    width: 300px;
+}
+
+.sidebar ul{
+   position: relative;
+   height: 100vh; 
+}
+
+.sidebar ul li{
+    list-style: none;
+}
+
+.sidebar ul li:hover{
+    background: #fff;
+}
+
+.sidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    color: rgba(34, 112, 214, 0.712);
+}
+
+.sidebar ul li a .text{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: rgba(34, 112, 214, 0.712);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.sidebar ul li a:hover{
+    background: #ececec;
+}
+
+@media only screen and (max-width: 922px){
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 50px;
+        background: #884A39(34, 112, 214, 0.712);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+    }
+
+    
+}
+
+@media only screen and (max-width: 787px){
+    header{
+        padding: 8px 35px;
+    }
+
+    .sidebar{
+        margin-top: 7%;
+    }
+
+    .navigation .btnLogin-popup{
+        width: 70px;
+        height: 35px;
+        background: transparent;
+        border: 1.2px solid #fff;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.7em;
+        color:#fff;
+        font-weight: 500;
+        margin-left: 30px;
+        transition: .5s;
+    }
+
+    .logo{
+        font-size: 1.5em;
+    }
+    
+    .navigation a{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 720px){
+
+    header{
+        padding: 5px 25px;
+    }
+
+    .navigation .btnLogin-popup{
+        width: 100px;
+        height: 45px;
+        border: 1.5px solid #fff;
+        border-radius: 6px;
+        font-size: 0.8em;
+        margin-left: 35px;
+    }
+
+    .navigation a{
+        font-size: 0.8em;
+        margin-left: 35px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+
+    header{
+        padding: 2.5px 15px;
+    }
+
+    .navigation .btnLogin-popup{
+        width: 70px;
+        height: 35px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        font-size: 0.6em;
+        margin-left: 25px;
+    }
+
+    .navigation a{
+        font-size: 0.6em;
+        margin-left: 25px;
+    }
+
+    .donji{
+        flex-direction: column;
+    }
+
+    .donji .odlomak{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .sidebar{
+        margin-top: 8.2%;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .sidebar{
+        margin-top: 8.6%;
+    }
+    .wrapper{
+    width: 350px;
+    height: 390px;
+    margin-left: 20%;
+    }
+}
+.bookingTitle{
+    color: white
+    }
+    @media screen and (max-width: 400px) and (max-height: 935px) {
+        
+    
+        /* Ostatak vaših stilova za manje ekrane i manje visine */
+        header {
+            padding: 5% 10%;
+        }
+        .welcome{
+            font-size: 50px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+        }
+    
+        .logo {
+            font-size: 1.5em;
+        }
+    
+        .navigation a {
+            font-size: 1em;
+            margin-left: 5%;
+        }
+    
+        .navigation .btnLogin-popup {
+            width: 30%;
+            margin-left: 5%;
+        }
+    
+        .narudzba {
+            width: 100%;
+            left: 0;
+            margin-left: 0;
+            transform: none;
+        }
+    
+        .form-container {
+            max-width: 100%;
+            margin: 5% 2%;
+        }
+    
+        .title {
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+    
+        .info-box{
+            margin-left: 10px;
+            position: sticky;
+            width: 85%;
+            height: 300px;
+            background-color: #b2b2b2;
+            border: 3px solid rgba(0, 0, 0, 0.712);
+            border-radius: 20px;
+            border-bottom-left-radius: 0%;
+            box-shadow: 8px 8px rgba(0, 0, 0, 0.5); 
+        }
+        .info-box .info-text{
+            font-weight: 500;
+            font-size: 13px;
+            margin-top: 5px;
+            user-select: none;
+            color:black
+           
+        }
+    
+        .datetimepicker {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }

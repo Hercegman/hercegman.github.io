@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspicious bunker</title>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>  
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>  
+    <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+    <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="style_escape_room1.css">
+
+   
+   </head>
+<body>
+    <header>
+        <h2 class="logo">Escape Mlaka</h2>
+        <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="esc_rooms.html">Escape Rooms</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </header>
+    <div>
+        <h1 class="title">Suspicious bunker</h2>
+    <div class="info-box">
+        <div class="info-text"><p class="bunker"> <b>Imagine... <br>
+            A nuclear incident occurs in the Antwerp area. <br>
+            You cannot escape the area altogether, <br>
+            but are part of a group of people who are <br>
+             lucky enough 
+             to find themselves near our fallout <br> shelter 
+             when disaster strikes.  
+            Can you manage to find your <br> way into the bunker? 
+            Will you succeed in turning on <br> all the vital systems
+            in the bunker? 
+            Will you survive the disaster?</b> </p></div>
+            
+            
+        
+        </div>
+    </div>
+   
+
+    <div class="datetimepicker">
+        <h2 class="bookingTitle">Book a gaming session</h2>
+            <div class='input-group date' id='picker'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>                 
+            </span>
+            </div>
+        </div>
+       <br>
+       <div class="gamebutton">       
+        <button id="bookin1" class="btn btn-primary btn-lg" onclick="aktivacija()">Book a game</button>
+    </div>
+    <footer>
+        <p>&copy; 2023 Escape Mlaka</p>
+      </footer>
+</div>
+   
+
+<script src="bunker.js"></script>
+
+</body>
+
+<script type="text/javascript">
+    $(function () {
+        $('#picker').datetimepicker();
+    });
+ </script>
+
+
+</html>

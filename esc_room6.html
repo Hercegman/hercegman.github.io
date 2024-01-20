@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King's choice</title>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>  
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>  
+    <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+    <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="style_escape_room6.css">
+
+   
+   </head>
+<body>
+    <header>
+        <h2 class="logo">Escape Mlaka</h2>
+        <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="esc_rooms.html">Escape Rooms</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </header>
+    <div>
+        <h1 class="title">King's choice</h2>
+    <div class="info-box">
+        <div class="info-text"><p class="bunker"> <b>Immerse yourself in a world of mystery, secrets, and excitement
+             as you embark on an unforgettable adventure in our escape room. Kings Choice is not just a game; it's a
+              journey through time and space, where each step reveals new challenges and invaluable secrets. Do you have
+               the courage to face royal tasks and make decisions that will shape your destiny? Our room is filled with puzzles,
+                hidden messages, and challenges that will test your intelligence, teamwork, and quick thinking..</b> </p></div>
+            
+            
+        </div>
+        </div>
+    </div>
+   
+
+    <div class="datetimepicker">
+        <h2 class="bookingTitle">Book a gaming session</h2>
+            <div class='input-group date' id='picker'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>                 
+            </span>
+            </div>
+        </div>
+       <br>
+       <div class="gamebutton">       
+        <button id="bookin1" class="btn btn-primary btn-lg" onclick="aktivacija()">Book a game</button>
+    </div>
+    <footer>
+        <p>&copy; 2023 Escape Mlaka</p>
+      </footer>
+</div>
+   
+
+<script src="bunker.js"></script>
+
+</body>
+
+<script type="text/javascript">
+    $(function () {
+        $('#picker').datetimepicker();
+    });
+ </script>
+
+
+</html>
